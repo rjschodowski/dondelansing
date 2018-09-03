@@ -1,0 +1,15 @@
+*{
+	background-color: gray;
+}
+
+#language-picker {
+	color: white;
+	background-color: blue;
+	border: 0px;
+	border-radius: 4px;
+	height: 24px;
+}
+
+.language-selector-link {
+	color: white;
+}
