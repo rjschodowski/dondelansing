@@ -176,15 +176,51 @@ svg {
   overflow: hidden;
 }
 
-#container {
-  width: 100%;
+
+
+
+.navbar {
   display: flex;
-  flex-wrap: wrap 
+  justify-content: space-between;
+  list-style: none;
+}
+.header-logo {
+  padding-left: 5%;
+}
+.header-logo img {
+  max-width: 150px;
+  height: auto;
 }
 
-.nav {
+.menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: #D6F1BC;
+  padding-right: 5%;
+}
+
+.nav-list li {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.language-selector-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  margin-top: 20px;
 }
 
 .header-logo {
@@ -192,12 +228,12 @@ svg {
   text-align: left;
   max-width: 100%;
   height: auto;
-  order: 1;
 }
 
-.nav-menu-top {
-  width: 100%;
-  order: 2;
+
+.sub-menu {
+  display: none;
+  position: relative;
 }
 
 .language-selector-container {
@@ -273,7 +309,7 @@ p {
 
 @media screen and (min-width: 701px) {
 .hero-image {
-  background-image: url('../img/heroimage1.png');
+  background-image: url('/img/lansingcityscape.jpg');
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
