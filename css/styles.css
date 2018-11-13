@@ -1,0 +1,324 @@
+/*Dave Brooks' suggestions:
+1) get rid of the first 6 lines of the CSS code directly below
+2) use this directly above your work: https://gist.github.com/nathansmith/288292
+3) David said he uses this 'reset' code with Unsemantic and has for the past 8 years and works very well*/
+
+
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #096296;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+/*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block;
+}
+
+b,
+strong {
+/*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold;
+}
+
+img {
+  font-size: 0;
+  vertical-align: middle;
+/*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic;
+}
+
+li {
+/*
+  For IE6 + IE7.
+*/
+  display: list-item;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+svg {
+/*
+  For IE9.
+*/
+  overflow: hidden;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-logo {
+  padding-left: 5%;
+}
+.header-logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: #D6F1BC;
+  padding-right: 5%;
+}
+
+.nav-list li {
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.language-selector-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  margin-top: 20px;
+}
+
+.header-logo {
+  width: auto;
+  text-align: left;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.sub-menu {
+  display: none;
+  position: relative;
+}
+
+.language-selector-container {
+  color: white;
+}
+
+#language-picker {
+	color: white;
+	background-color: #042337;
+	border: 0px;
+	border-radius: 4px;
+	height: 24px;
+}
+
+.language-selector-link {
+	color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 5vw;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -2px 3px 8px #000000;
+}
+
+p {
+  color: white;
+  text-align: left;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+@media screen and (max-width: 501px) {
+  h1 {
+    font-size: 9vw;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (min-width: 701px) {
+.hero-image {
+  background-image: url('/img/lansingcityscape.jpg');
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100%;
+  height: auto
+  }
+}
+
+
+
